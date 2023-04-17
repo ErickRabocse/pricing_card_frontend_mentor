@@ -1,0 +1,121 @@
+//STYLES
+//### Primary
+$Cyan: hsl(179, 62%, 43%);
+$Light-Cyan: rgb(73 190 189);
+$Bright-Yellow: hsl(71, 73%, 54%);
+//### Neutral
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+
+//RESETS
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $Light-Gray;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+// CONTAINER
+.container {
+  width: 635px;
+  height: 475px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
+}
+
+// MAIN -> presentation
+.presentation {
+  padding: 40px 40px 10px 40px;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  &_main_header {
+    color: $Cyan;
+    margin-bottom: 15px;
+  }
+  &_header {
+    color: $Bright-Yellow;
+    margin-bottom: 10px;
+  }
+  &_text {
+    color: $Grayish-Blue;
+    line-height: 25px;
+    padding-bottom: 25px;
+  }
+}
+// BOTTOM -> bottom
+.bottom {
+  display: flex;
+  color: white;
+  &_price {
+    flex: 1;
+    padding: 40px 40px 5px 40px;
+    background-color: $Cyan;
+    border-radius: 0 0 0 5px;
+  }
+  &_benefits {
+    flex: 1;
+    padding: 45px 40px 5px 40px;
+    background-color: $Light-Cyan;
+    border-radius: 0 0 5px 0;
+  }
+  &_header {
+    margin: 5px 0;
+    color: white;
+  }
+  &_header {
+    margin-bottom: 20px;
+  }
+  &_rate {
+    font-size: 14px;
+    font-weight: 200;
+    margin: 0 10px 10px 0;
+  }
+  &_number {
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  &_btn {
+    width: 235px;
+    height: 50px;
+    margin: 33px auto;
+    background-color: $Bright-Yellow;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background-color: white;
+      color: $Bright-Yellow;
+      cursor: pointer;
+    }
+  }
+  &_list {
+    list-style: none;
+    line-height: 20px;
+    font-weight: 200;
+  }
+}
