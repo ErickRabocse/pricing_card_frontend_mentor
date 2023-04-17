@@ -26,9 +26,14 @@ body {
   justify-content: center;
   flex-direction: column;
   background-color: $Light-Gray;
+  @media (max-width: 700px) {
+    margin: 20px auto;
+    height: 100%;
+  }
 }
 
 .attribution {
+  margin-top: 5px;
   font-size: 11px;
   text-align: center;
 }
@@ -39,16 +44,28 @@ body {
 // CONTAINER
 .container {
   width: 635px;
-  height: 475px;
+  height: 500px;
   border-radius: 5px;
+  overflow: hidden;
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
+  @media (max-width: 700px) {
+    height: 725px;
+    width: 550px;
+    // margin-bottom: 20px;
+  }
+  @media (max-width: 600px) {
+    width: 350px;
+  }
+  @media (max-width: 600px) {
+    width: 360px;
+  }
 }
 
 // MAIN -> presentation
 .presentation {
   padding: 40px 40px 10px 40px;
   background-color: white;
-  border-radius: 5px 5px 0 0;
+  height: 225px;
   &_main_header {
     color: $Cyan;
     margin-bottom: 15px;
@@ -62,39 +79,59 @@ body {
     line-height: 25px;
     padding-bottom: 25px;
   }
+  @media (max-width: 600px) {
+    padding: 20px;
+    height: 250px;
+  }
 }
 // BOTTOM -> bottom
 .bottom {
   display: flex;
   color: white;
+  height: 500px;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+  @media (max-width: 600px) {
+    height: 475px;
+  }
   &_price {
     flex: 1;
     padding: 40px 40px 5px 40px;
     background-color: $Cyan;
-    border-radius: 0 0 0 5px;
+    @media (max-width: 700px) {
+      padding: 20px 40px 0 40px;
+    }
+    @media (max-width: 600px) {
+      padding: 20px;
+      height: 225px;
+    }
   }
   &_benefits {
     flex: 1;
     padding: 45px 40px 5px 40px;
     background-color: $Light-Cyan;
-    border-radius: 0 0 5px 0;
+    @media (max-width: 700px) {
+      padding: 20px 40px 0 40px;
+    }
+    @media (max-width: 600px) {
+      padding: 20px;
+      height: 100%;
+    }
   }
   &_header {
-    margin: 5px 0;
+    padding: 5px 0 20px 0;
     color: white;
-  }
-  &_header {
-    margin-bottom: 20px;
   }
   &_rate {
     font-size: 14px;
     font-weight: 200;
-    margin: 0 10px 10px 0;
+    padding: 0 10px 10px 0;
   }
   &_number {
     font-size: 30px;
     font-weight: 700;
-    margin-right: 10px;
+    padding-right: 10px;
   }
   &_btn {
     width: 235px;
@@ -106,6 +143,9 @@ body {
     color: white;
     font-weight: 700;
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+    @media (max-width: 700px) {
+      width: 100%;
+    }
 
     &:hover {
       background-color: white;

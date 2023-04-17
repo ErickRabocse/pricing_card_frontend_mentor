@@ -17,8 +17,15 @@ body {
   flex-direction: column;
   background-color: hsl(204, 43%, 93%);
 }
+@media (max-width: 700px) {
+  body {
+    margin: 20px auto;
+    height: 100%;
+  }
+}
 
 .attribution {
+  margin-top: 5px;
   font-size: 11px;
   text-align: center;
 }
@@ -29,15 +36,32 @@ body {
 
 .container {
   width: 635px;
-  height: 475px;
+  height: 500px;
   border-radius: 5px;
+  overflow: hidden;
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 700px) {
+  .container {
+    height: 725px;
+    width: 550px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 350px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 360px;
+  }
 }
 
 .presentation {
   padding: 40px 40px 10px 40px;
   background-color: white;
-  border-radius: 5px 5px 0 0;
+  height: 225px;
 }
 .presentation_main_header {
   color: hsl(179, 62%, 43%);
@@ -52,39 +76,73 @@ body {
   line-height: 25px;
   padding-bottom: 25px;
 }
+@media (max-width: 600px) {
+  .presentation {
+    padding: 20px;
+    height: 250px;
+  }
+}
 
 .bottom {
   display: flex;
   color: white;
+  height: 500px;
+}
+@media (max-width: 700px) {
+  .bottom {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .bottom {
+    height: 475px;
+  }
 }
 .bottom_price {
   flex: 1;
   padding: 40px 40px 5px 40px;
   background-color: hsl(179, 62%, 43%);
-  border-radius: 0 0 0 5px;
+}
+@media (max-width: 700px) {
+  .bottom_price {
+    padding: 20px 40px 0 40px;
+  }
+}
+@media (max-width: 600px) {
+  .bottom_price {
+    padding: 20px;
+    height: 225px;
+  }
 }
 .bottom_benefits {
   flex: 1;
   padding: 45px 40px 5px 40px;
   background-color: rgb(73, 190, 189);
-  border-radius: 0 0 5px 0;
+}
+@media (max-width: 700px) {
+  .bottom_benefits {
+    padding: 20px 40px 0 40px;
+  }
+}
+@media (max-width: 600px) {
+  .bottom_benefits {
+    padding: 20px;
+    height: 100%;
+  }
 }
 .bottom_header {
-  margin: 5px 0;
+  padding: 5px 0 20px 0;
   color: white;
-}
-.bottom_header {
-  margin-bottom: 20px;
 }
 .bottom_rate {
   font-size: 14px;
   font-weight: 200;
-  margin: 0 10px 10px 0;
+  padding: 0 10px 10px 0;
 }
 .bottom_number {
   font-size: 30px;
   font-weight: 700;
-  margin-right: 10px;
+  padding-right: 10px;
 }
 .bottom_btn {
   width: 235px;
@@ -96,6 +154,11 @@ body {
   color: white;
   font-weight: 700;
   box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 700px) {
+  .bottom_btn {
+    width: 100%;
+  }
 }
 .bottom_btn:hover {
   background-color: white;

@@ -1,7 +1,6 @@
 {
   "name": "project_7_pricing_card",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "compile": "sass --watch --no-source-map main.scss style.css"
@@ -10,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.62.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickRabocse/pricing_card_frontend_mentor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ErickRabocse/pricing_card_frontend_mentor/issues"
+  },
+  "homepage": "https://github.com/ErickRabocse/pricing_card_frontend_mentor#readme",
+  "description": ""
 }
